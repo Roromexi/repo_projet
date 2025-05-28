@@ -22,8 +22,13 @@ for i in range(len(temps)-1):
 
 # Tracer
 plt.plot(temps, vitesse_km_h)
-plt.xlabel("colonne_x")
-plt.ylabel("colonne_y")
+plt.xlabel("temps(s)")
+plt.ylabel("vitesse(km/h)")
 plt.title("Tracé de colonne_y en fonction de colonne_x")
 plt.grid(True)
+plt.show()
+plt.plot(temps, acc)
+plt.grid()
+plt.xlabel("temps(s)")
+plt.ylabel(r"accélération (m/s$^2$)")
 plt.show()
